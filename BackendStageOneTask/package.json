@@ -2,8 +2,9 @@
   "name": "BackendStageOneTask",
   "version": "1.0.0",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "start:dev": "nodemon"
+    "start": "tsc node dist/index.js",
+    "start:dev": "nodemon",
+    "build": "tsc"
   },
   "license": "MIT",
   "devDependencies": {
