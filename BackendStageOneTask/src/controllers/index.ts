@@ -17,8 +17,8 @@ export class Index {
       current_day: daysOfWeek[currentDay],
       utc_time: currentDate,
       track: track.toString(),
-      github_file_url: 'https://github.com/krispamB/HNGX',
-      github_repo_url: 'https://github.com/krispamB/HNGX',
+      github_file_url: 'https://github.com/krispamB/HNGX/blob/main/BackendStageOneTask/dist/index.js',
+      github_repo_url: 'https://github.com/krispamB/HNGX/tree/main',
       status_code: 200
     }
 
