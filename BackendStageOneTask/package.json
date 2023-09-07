@@ -1,7 +1,7 @@
 {
   "name": "BackendStageOneTask",
   "version": "1.0.0",
-  "main": "/src/index.ts",
+  "main": "BackendStageOneTask/src/index.ts",
   "scripts": {
     "start:dev": "nodemon"
   },
