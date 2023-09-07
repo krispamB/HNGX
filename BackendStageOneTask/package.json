@@ -1,8 +1,8 @@
 {
   "name": "BackendStageOneTask",
   "version": "1.0.0",
-  "main": "BackendStageOneTask/src/index.ts",
   "scripts": {
+    "start": "ts-node src/index.ts",
     "start:dev": "nodemon"
   },
   "license": "MIT",
