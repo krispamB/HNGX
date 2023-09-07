@@ -16,7 +16,7 @@ export class Index {
       slack_name: slack_name.toString(),
       current_day: daysOfWeek[currentDay],
       utc_time: currentDate,
-      track: track.toString(),
+      track: track.toString().slice(0, -5) + 'Zz',
       github_file_url: 'https://github.com/krispamB/HNGX/blob/main/BackendStageOneTask/dist/index.js',
       github_repo_url: 'https://github.com/krispamB/HNGX/tree/main',
       status_code: 200
