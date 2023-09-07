@@ -1,7 +1,7 @@
 export type response = {
   slack_name: string,
   current_day: string,
-  utc_time: Date,
+  utc_time: string,
   track: string,
   github_file_url: string,
   github_repo_url: string,
