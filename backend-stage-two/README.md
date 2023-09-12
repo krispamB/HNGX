@@ -39,9 +39,9 @@ This is a simple API for managing 'person' resources. It provides basic CRUD (Cr
 
 - **GET /:** To check if API works.
 - **POST /api:** Create a new person record.
-- **GET /api/:name:** Retrieve details of a specific person by their id.
-- **PUT /api/:name:** Update the details of a specific person.
-- **DELETE /api/:name:** Delete a person record.
+- **GET /api/:id:** Retrieve details of a specific person by their id.
+- **PUT /api/:id:** Update the details of a specific person.
+- **DELETE /api/:id:** Delete a person record.
 
 ## Testing
 To test the API:
