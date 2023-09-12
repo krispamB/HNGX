@@ -15,7 +15,7 @@ async function bootstrap() {
     }),
   );
   
-  app.setGlobalPrefix('api');
+
 
   const config = new DocumentBuilder()
     .setTitle('HNGx stage II API Docs')
@@ -28,6 +28,7 @@ async function bootstrap() {
 
   SwaggerModule.setup('docs', app, document);
 
+  app.setGlobalPrefix('api');
 
   await app.listen(3000);
 }
