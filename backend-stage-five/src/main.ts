@@ -4,7 +4,7 @@ import { Logger, ValidationPipe } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {
-  const logger = new Logger('AppBootstrap')
+  const logger = new Logger('AppBootstrap');
   const app = await NestFactory.create(AppModule);
 
   app.enableCors();
@@ -17,11 +17,11 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
 
   const config = new DocumentBuilder()
-  .setTitle('Chrome extension API')
-  .setDescription('Doc for API')
-  .setVersion('1.0')
-  .addTag('chrome extension')
-  .build();
+    .setTitle('Chrome extension API')
+    .setDescription('Doc for API')
+    .setVersion('1.0')
+    .addTag('chrome extension')
+    .build();
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document);

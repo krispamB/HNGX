@@ -53,11 +53,14 @@ export class CloudinaryService {
   }
 
   async deleteVideo(public_id: string) {
-    return new Promise(async(resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
       await v2.uploader.destroy(public_id, (error, result) => {
-        if(error) return reject(error)
-        return resolve(`file with public_id ${public_id} deletes successfully` + JSON.stringify(result))
-      })
-    })
+        if (error) return reject(error);
+        return resolve(
+          `file with public_id ${public_id} deletes successfully` +
+            JSON.stringify(result),
+        );
+      });
+    });
   }
 }

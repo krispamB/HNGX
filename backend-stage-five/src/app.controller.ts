@@ -8,7 +8,7 @@ export class AppController {
 
   @ApiTags('Test')
   @Get()
-  @ApiOperation({summary: 'To test if the api works'})
+  @ApiOperation({ summary: 'To test if the api works' })
   getHello(): string {
     return this.appService.getHello();
   }
