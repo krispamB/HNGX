@@ -28,8 +28,7 @@ export class VideoService {
     const video_path = join(this.uploadPath, fileName);
 
     const newVideo: Video = await this.prisma.video.create({
-      data: {
-        title: dto.title,
+      data: {        title: dto.title,
         video_path,
       },
     });
