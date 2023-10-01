@@ -16,6 +16,8 @@ async function bootstrap() {
   );
   app.setGlobalPrefix('api');
 
+  
+
   const config = new DocumentBuilder()
     .setTitle('Chrome extension API')
     .setDescription('Doc for API')

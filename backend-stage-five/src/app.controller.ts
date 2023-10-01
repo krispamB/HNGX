@@ -7,7 +7,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @ApiTags('Test')
-  @Get()
+  @Get('health-check')
   @ApiOperation({ summary: 'To test if the api works' })
   getHello(): string {
     return this.appService.getHello();
